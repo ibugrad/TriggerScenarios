@@ -3,7 +3,8 @@
 trigger HelloWorld on Account (before insert, before update) 
 {
   List<Account> accs = Trigger.new;
-  MyHelloWorld my= new MyHelloWorld(); //creating instance of apex class my.addHelloWorld(accs); 
+  MyHelloWorld my= new MyHelloWorld(); 
+  //creating instance of apex class my.addHelloWorld(accs); 
   // calling method from the apex class
 }
 
