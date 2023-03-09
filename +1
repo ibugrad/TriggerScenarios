@@ -1,0 +1,38 @@
+Scenario 2
+Create the field with the name “Contact Relationship” checkbox over the contact object and generate an object known as “Contact Relationship” that is associated with contacts. Develop a logic while we create a connection by verifying the contact relationship checkbox; after that contact, the relationship is established systematically for the contact. Trigger:
+
+Step 1
+
+ According to the requirement, we perform the operation over the trigger when a user submits a record which means we have to use the “after insert” trigger. After that, when we have to check about an event, therefore we use “trigger. insert” and “trigger.isAfter”  to dismiss the trigger on these specific events.
+
+Step 2
+
+ After that, we create an instance of the apex class “ContactMasterHandler” as “ConIns”. After that, we call a “callContactRelationshipByContact” method from the apex class.
+
+Step 3
+
+ Let us see an apex method, “createContactRelationshipByContact”, in which we pass the contact list in the IstCon instance.
+
+Step 4
+
+ After that, we create an instance of the List of Contact_Relationship_c as “conlist” that stores “Contact_Relationship_c” records.
+
+Step 5
+
+ Then, we create the “for” loop for all the recently created contacts in the salesforce.
+
+Step 6
+
+ After that, “newcon.Contact_Relationship_c” is a field from the created contact.
+
+Step 7
+
+ After that, we create the instance for the “Contact_Relationship_c” object like “CR”.
+
+Step 8
+
+After creating the record for the “CR”, we give the name the same as the “LastName”  of the newly established contact. Contact is equivalent to the id of the newly established contact.
+
+Step 9
+
+After that, we add “CR”  in the “ConList”, and by “Inserting”, we insert the “Contact_Relationship_c” record in the salesforce.
