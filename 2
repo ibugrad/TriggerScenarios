@@ -1,7 +1,8 @@
+
 //The following trigger updates the field called “Hello” by the value “World”whenever we are creating an account or updating an account record. Create the field called “Hello” on the Account Object (Data Type = Text)
 
-trigger HelloWorld on Account (before insert, before update) 
-{
+trigger HelloWorld on Account (before insert, before update) {
+
   List<Account> accs = Trigger.new;
   MyHelloWorld my= new MyHelloWorld(); 
   //creating instance of apex class my.addHelloWorld(accs); 
