@@ -1,4 +1,4 @@
-Scenario 2
+Scenario
 
 Create the field with the name “Contact Relationship” checkbox over the contact object and generate an object known as “Contact Relationship” that is associated with contacts. Develop a logic while we create a connection by verifying the contact relationship checkbox; after that contact, the relationship is established systematically for the contact. Trigger:
 
